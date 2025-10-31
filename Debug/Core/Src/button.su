@@ -1,0 +1,7 @@
+button.c:31:6:getbutton1Value	8	static
+button.c:53:6:getbutton2Value	8	static
+button.c:75:6:getbutton3Value	8	static
+button.c:97:5:isButton1Pressed	4	static
+button.c:110:5:isButton2Pressed	4	static
+button.c:123:5:isButton3Pressed	4	static
+button.c:136:6:getButtonValue	8	static
