@@ -2,7 +2,7 @@
  * fsm_setting.c
  *
  *  Created on: Oct 28, 2025 
- *      Author: HP
+ *      Author: nguye
  */
 
 #include "fsm_automatic.h"
@@ -13,10 +13,7 @@
 #include "software_timer.h"
 #include "global.h"
 
-/*	@brief:		Blink the LED with frequency 2Hz when on MODE 2, 3, 4
- *	@param:		The LED will be blinked (RED, YELLOW, GREEN)
- * 	@retval:	None
- */
+
 void blinkyLed(int LED) {
 	switch(BLINKY_LED_STATUS){
 	case INIT:
@@ -53,10 +50,7 @@ void blinkyLed(int LED) {
 	}
 }
 
-/*	@brief:		Setting the MODE
- *	@param:		None
- * 	@retval:	None
- */
+
 void fsm_setting() {
 	switch(FSM_STATUS){
 		case INIT:
