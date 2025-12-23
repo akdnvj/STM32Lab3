@@ -2,7 +2,7 @@
  * display_7seg.h
  *
  *  Created on: Oct 28, 2025
- *      Author: HP
+ *      Author: nguye
  */
 
 #ifndef INC_DISPLAY_7SEG_H_
