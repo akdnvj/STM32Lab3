@@ -2,7 +2,7 @@
  * button_reading.c
  *
  *  Created on: Oct 28, 2025
- *      Author: HP
+ *      Author: Nguye
  */
 
 #include "button_reading.h"
@@ -17,16 +17,12 @@ struct ButtonType {
 	int flag;
 };
 
-// Init 3 buttons
+
 struct ButtonType button1 = {RELEASED, RELEASED, RELEASED, RELEASED, 0};
 struct ButtonType button2 = {RELEASED, RELEASED, RELEASED, RELEASED, 0};
 struct ButtonType button3 = {RELEASED, RELEASED, RELEASED, RELEASED, 0};
 
-/**
- * 	@brief:		Handles debounce logic for button1
- *	@param:		None
- * 	@retval:	None
- */
+
 void getbutton1Value(void) {
 	button1.key2 = button1.key1;
 	button1.key1 = button1.key0;
@@ -39,16 +35,11 @@ void getbutton1Value(void) {
 			}
 		}
 		else {
-			// Maybe long press, not need to handle
+			
 		}
 	}
 }
 
-/**
- * 	@brief:		Handles debounce logic for button2
- *	@param:		None
- * 	@retval:	None
- */
 void getbutton2Value(void) {
 	button2.key2 = button2.key1;
 	button2.key1 = button2.key0;
@@ -61,16 +52,12 @@ void getbutton2Value(void) {
 			}
 		}
 		else {
-			// Maybe long press, not need to handle
+			
 		}
 	}
 }
 
-/**
- * 	@brief:		Handles debounce logic for button3
- *	@param:		None
- * 	@retval:	None
- */
+
 void getbutton3Value(void) {
 	button3.key2 = button3.key1;
 	button3.key1 = button3.key0;
@@ -83,16 +70,12 @@ void getbutton3Value(void) {
 			}
 		}
 		else {
-			// Maybe long press, not need to handle
+			
 		}
 	}
 }
 
-/**
- * 	@brief:		Checks if button1 has been pressed and clears its flag
- *	@param:		None
- * 	@retval:	1 if button1 is pressed, 0 otherwise
- */
+
 int isButton1Pressed(void) {
 	if (button1.flag == 1) {
 		button1.flag = 0;
@@ -101,11 +84,7 @@ int isButton1Pressed(void) {
 	else return 0;
 }
 
-/**
- * 	@brief:		Checks if button2 has been pressed and clears its flag
- *	@param:		None
- * 	@retval:	1 if button2 is pressed, 0 otherwise
- */
+
 int isButton2Pressed(void) {
 	if (button2.flag == 1) {
 		button2.flag = 0;
@@ -114,11 +93,7 @@ int isButton2Pressed(void) {
 	else return 0;
 }
 
-/**
- * 	@brief:		Checks if button3 has been pressed and clears its flag
- *	@param:		None
- * 	@retval:	1 if button3 is pressed, 0 otherwise
- */
+
 int isButton3Pressed(void){
 	if (button3.flag == 1){
 		button3.flag = 0;
@@ -127,11 +102,7 @@ int isButton3Pressed(void){
 	else return 0;
 }
 
-/**
- * 	@brief:		Get value of 3 buttons
- *	@param:		None
- * 	@retval:	None
- */
+
 void getButtonValue(void){
 	getbutton1Value();
 	getbutton2Value();
