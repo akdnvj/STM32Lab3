@@ -2,22 +2,22 @@
  * software_timer.h
  *
  *  Created on: Oct 28, 2025
- *      Author: HP
+ *      Author: nguye
  */
 
 #include "software_timer.h"
 
 int TIME_CYCLE = 10;
 
-// Timer 1 is used for traffic light (MODE 1)
+
 int timer1_counter = 0;
 int timer1_flag = 0;
 
-// Timer 2 is used for setting the frequency of four 7-segment LEDs
+
 int timer2_counter = 0;
 int timer2_flag = 0;
 
-// Timer 3 is used for the frequency of 7-segment LEDs when entering MODE 2 to MODE 4
+
 int timer3_counter = 0;
 int timer3_flag = 0;
 
