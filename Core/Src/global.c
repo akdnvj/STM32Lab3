@@ -2,7 +2,7 @@
  * global.c
  *
  *  Created on: Oct 28, 2025
- *      Author: HP
+ *      Author: nguye
  */
 
 #include "global.h"
@@ -21,4 +21,4 @@ int BLINKY_LED_STATUS = INIT;
 
 int led_buffer[4] = {0, 0, 0, 0};
 int STATUS_7SEG = INIT;
-int TIME_7SEG = 250; // The time of change to other 7-segment LED is 0.25 second
+int TIME_7SEG = 250;
