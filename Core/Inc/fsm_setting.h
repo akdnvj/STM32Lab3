@@ -2,7 +2,7 @@
  * fsm_setting.h
  *
  *  Created on: Oct 28, 2025
- *      Author: HP
+ *      Author: nguye
  */
 
 #ifndef INC_FSM_SETTING_H_
