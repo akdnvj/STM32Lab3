@@ -2,7 +2,7 @@
  * display_7seg.c
  *
  *  Created on: Oct 28, 2025
- *      Author: HP
+ *      Author: nguye
  */
 
 #include "fsm_automatic.h"
@@ -11,18 +11,9 @@
 #include "display_7seg.h"
 #include "software_timer.h"
 
-/**
- * 	@brief:		Display number to 7 SEG led with prior buffer
- *	@param:		None
- * 	@retval:	None
- */
+
 void displaySegment(void){
-	/**
-	 * Switch between the states of the 7-segment LED display.
-	 * - INIT: Initialize the display and set the timer.
-	 * - SEG0 to SEG3: Enable the corresponding segment and display the number.
-	 * Transition between segments occurs when timer2_flag is set.
-	 */
+	
 	switch (STATUS_7SEG) {
 		case INIT:
 			STATUS_7SEG = SEG0;
@@ -65,11 +56,7 @@ void displaySegment(void){
 	}
 }
 
-/**
- * 	@brief:		Activate the enable 7-segment LED
- *	@param:		Index of the 7-segment LED to activate (from 0 to 4)
- * 	@retval:	None
- */
+
 void setEnableSignal(int index){
 	switch (index){
 	case SEG0:
@@ -101,11 +88,7 @@ void setEnableSignal(int index){
 	}
 }
 
-/**
- * 	@brief:		Display a number on 7-segment LED
- *	@param:		Number to display (from 0 to 9)
- * 	@retval:	None
- */
+
 void displayNumber(int num){
 	 switch (num)
 	 {
@@ -204,11 +187,7 @@ void displayNumber(int num){
 	 }
 }
 
-/**
- * 	@brief:		Update buffer based on the selected mode (MODE2, MODE3 and MODE4)
- *	@param:		Mode to update the LED buffer
- * 	@retval:	None
- */
+
 void updateBufferWithMode(int MODE) {
 	switch(MODE) {
 		case MODE2:
