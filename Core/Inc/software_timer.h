@@ -2,7 +2,7 @@
  * software_timer.h
  *
  *  Created on: Oct 28, 2025
- *      Author: HP
+ *      Author: nguye
  */
 
 #ifndef INC_SOFTWARE_TIMER_H_
