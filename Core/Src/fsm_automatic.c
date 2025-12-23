@@ -2,7 +2,7 @@
  * fsm_automatic.c
  *
  *  Created on: Oct 28, 2025
- *      Author: HP
+ *      Author: nguye
  */
 
 #include "fsm_automatic.h"
@@ -10,19 +10,13 @@
 #include "main.h"
 #include "display_7seg.h"
 
-/*	@brief:		All the LED of system off
- *	@param:		None
- * 	@retval:	None
- */
+
 void allLEDoff() {
 	HAL_GPIO_WritePin(GPIOA, LED_RED_1_Pin|LED_YELLOW_1_Pin|LED_GREEN_1_Pin
 							|LED_RED_2_Pin|LED_YELLOW_2_Pin|LED_GREEN_2_Pin, SET);
 }
 
-/*	@brief:		Traffic light run automatically (Mode 1)
- *	@param:		None
- * 	@retval:	None
- */
+
 void fsm_automatic() {
 	switch (autoStatus) {
 	case INIT:
