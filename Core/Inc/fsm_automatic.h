@@ -2,7 +2,7 @@
  * fsm_automatic.h
  *
  *  Created on: Oct 28, 2025
- *      Author: HP
+ *      Author: nguye
  */
 
 #ifndef INC_FSM_AUTOMATIC_H_
