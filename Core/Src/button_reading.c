@@ -2,7 +2,7 @@
  * button_reading.c
  *
  *  Created on: Oct 28, 2025
- *      Author: Nguye
+ *      Author: nguye
  */
 
 #include "button_reading.h"
